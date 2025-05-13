@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Daily Doodle</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      .doodle-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .doodle-grid img {
+        width: 100%;
+        border: 2px dashed #000;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-bar">
+      <div
+        class="center-header"
+        style="margin: 0 auto; display: flex; align-items: center; gap: 15px"
+      >
+        <img
+          src="images/daily doodle.png"
+          alt="Daily Doodle Logo"
+          style="height: 60px"
+        />
+        <h1 class="site-title" style="margin: 0">DAILY DOODLE</h1>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h2>Doodle Gallery</h2>
+      <section class="doodle-grid">
+        <img src="images/owl.png" alt="Owl" />
+        <img src="images/eye.png" alt="Eye" />
+        <img src="images/flower.png" alt="Flower" />
+        <img src="images/car.png" alt="Car" />
+        <img src="images/horizon.png" alt="Horizon" />
+        <img src="images/sunset.png" alt="Sunset" />
+        <img src="images/ocean.png" alt="Ocean" />
+        <img src="images/apple.png" alt="Apple" />
+        <img src="images/mouth.png" alt="Mouth" />
+        <img src="images/farm.png" alt="Farm" />
+        <img src="images/hand.png" alt="Hand" />
+      </section>
+    </main>
+  </body>
+</html>

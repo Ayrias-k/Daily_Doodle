@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Daily Doodle</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-bar">
+      <div
+        class="center-header"
+        style="margin: 0 auto; display: flex; align-items: center; gap: 15px"
+      >
+        <img
+          src="images/daily doodle.png"
+          alt="Daily Doodle Logo"
+          style="height: 60px"
+        />
+        <h1 class="site-title" style="margin: 0">DAILY DOODLE</h1>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h2>Contact Us</h2>
+      <p>
+        Get started with your personal doodles today! Complete the form below
+        for any questions.
+      </p>
+      <form action="mailto:your@email.com" method="post" enctype="text/plain">
+        <label for="name">Full Name</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email Address</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="subject">Subject</label><br />
+        <input type="text" id="subject" name="subject" required /><br /><br />
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+  </body>
+</html>
